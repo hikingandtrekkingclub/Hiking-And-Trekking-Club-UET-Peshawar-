@@ -220,12 +220,23 @@
 <body>
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="images/logo.png" height="50">
-                <div class="footer-divider mx-3"></div>
-                <img src="images/uet.png" height="50">
+    <div class="container">
+        
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/logo.png" height="50">
+            <div class="footer-divider mx-3"></div>
+            <img src="images/uet.png" height="50">
+        </a>
+
+        <!-- MOBILE JOIN BUTTON -->
+        <div class="d-flex align-items-center ms-auto d-lg-none">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZ7N-KAJ1Jugb-hhhfCak8ly59AYm3QCOJzGQknreRb9w8ow/viewform?usp=header"
+               class="btn-gold px-3 py-2"
+               target="_blank"
+               style="font-size:0.65rem;">
+               Join
             </a>
+<<<<<<< HEAD
             <div class="collapse navbar-collapse" id="nav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="#legacy">Legacy</a></li>
@@ -240,9 +251,56 @@
                     <a href="https://www.linkedin.com/company/htc-uet-peshawar/" class="nav-icon me-4"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://forms.gle/P1wb6FrZLipu4F4J9" class="btn-gold px-4" target="_blank">Join</a>
                 </div>
+=======
+        </div>
+
+        <!-- MOBILE TOGGLER -->
+        <button class="navbar-toggler border-0 shadow-none ms-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav"
+                aria-controls="nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#legacy">Legacy</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cabinet">Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tours">Expeditions</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            </ul>
+
+            <div class="d-flex align-items-center">
+                <a href="https://www.facebook.com/htc.uetp" class="nav-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/htc_uetp.pk/" class="nav-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://youtube.com/@hikingandtrekkingclubuetpeshaw" class="nav-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/company/htc-uet-peshawar/" class="nav-icon me-4">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <!-- DESKTOP JOIN BUTTON -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZ7N-KAJ1Jugb-hhhfCak8ly59AYm3QCOJzGQknreRb9w8ow/viewform?usp=header"
+                   class="btn-gold px-4 d-none d-lg-inline-block"
+                   target="_blank">
+                   Join
+                </a>
+>>>>>>> aa3c12c7bd2f6a977a065fe107bd6ac394d6860c
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <section class="hero">
         <div class="hero-bg"></div>
@@ -461,5 +519,6 @@ data.executives.forEach((p, i) => {
             g1.innerHTML += g1.innerHTML; g2.innerHTML += g2.innerHTML;
         });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
