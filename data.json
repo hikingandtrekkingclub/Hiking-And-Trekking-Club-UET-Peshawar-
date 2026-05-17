@@ -13,7 +13,7 @@
       "role": "Club Captain",
       "image": "images/aimal.png",
       "badge": "badge-green",
-      "quote": "I am an Explorer"
+      "quote": "I am not Lost,I am an Explorer"
     },
     {
       "name": "Arshbala khan ",
@@ -26,41 +26,36 @@
   "executives": [
     {
       "name": "Ayoob Rasheed",
-      "role": "Coordinator",
+      "role": "Club Coordinator",
       "image": "images/ayoobs_image.jpeg",
       "quote": "I am an explorer"
     },
     {
       "name": "Wadan Ijaz",
-      "role": "Management Lead",
+      "role": "Director Operations & EVents",
       "image": "images/wadan_img.jpg",
       "quote": "I am an explorer"
     },
     {
       "name": "Mian Muhammad Haziq",
-      "role": "Expeditions Lead",
+      "role": "Director of Gear & Expeditions",
       "image": "images/haziq.jpeg",
       "quote": "I am an explorer"
     },
     {
-      "name": "Muhammad Shahzaib Rahat",
-      "role": "Gear & Equipment Lead",
-      "image": "images/shahzeb_image.jpg",
+      "name": "TBD",
+      "role": "Director Of Safety",
+      "image": "images/logo.png",
       "quote": "I am an explorer"
     },
     {
       "name": "Osman Bin Anwar",
-      "role": "Media & Communications Lead",
+      "role": "Director of Media & PR",
       "image": "images/usman_img.jpeg",
       "quote": "I am an explorer"
-    },
-    
-    {
-      "name": "Muhammad Ahsan",
-      "role": "Management Co-Lead",
-      "image": "images/ahsan_img.jpg",
-      "quote": "I am an explorer"
     }
+    
+   
   ],
    "advisory": [
     {
@@ -79,12 +74,6 @@
       "name": "Muhammad Maaz",
       "role": "Advisor",
       "image": "images/maaz_img.jpg",
-      "quote": "I am an explorer"
-    },
-    {
-      "name": "Muhammad Talha Khan",
-      "role": "Advisor",
-      "image": "images/talha_img.jpg",
       "quote": "I am an explorer"
     }
   ],
@@ -127,14 +116,11 @@
     }
   ],
   "gallery": [
-    "images/a1.jpeg",
-    "images/a2.jpg",
+   
     "images/a3.jpg",
     "images/a4.jpg",
     "images/a5.jpg",
     "images/a6.jpg",
-    "images/a7.jpg",
-    "images/a8.jpg",
     "images/a9.jpg",
     "images/a10.jpg",
     "images/a11.jpg",
@@ -148,6 +134,7 @@
     "images/a22.jpg",
     "images/c1.jpeg",
     "images/c2.jpeg",
-    "images/c3.jpeg"
+    "images/c3.jpeg",
+    "images/mashkpuri2026.jpg"
   ]
 }
