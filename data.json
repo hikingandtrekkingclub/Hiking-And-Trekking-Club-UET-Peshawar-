@@ -42,12 +42,7 @@
       "image": "images/haziq.jpeg",
       "quote": "I am an explorer"
     },
-    {
-      "name": "TBD",
-      "role": "Director Of Safety",
-      "image": "images/logo.png",
-      "quote": "I am an explorer"
-    },
+   
     {
       "name": "Osman Bin Anwar",
       "role": "Director of Media & PR",
@@ -78,6 +73,12 @@
     }
   ],
   "tours": [
+    {
+      "name": "HTC:Into The Wild 2026",
+      "image": "images/htc.jpeg",
+      "status": "recent",
+      "date": "August 30 to Sep 5"
+    },
     {
       "name": "Galai medaan, Chor valley, Manoor valley, Naran valley",
       "image": "images/a4.jpg",
@@ -122,7 +123,7 @@
     "images/a5.jpg",
     "images/a6.jpg",
     "images/a9.jpg",
-    "images/a10.jpg",
+    "images/a7.jpg",
     "images/a11.jpg",
     "images/a12.jpg",
     "images/a13.png",
