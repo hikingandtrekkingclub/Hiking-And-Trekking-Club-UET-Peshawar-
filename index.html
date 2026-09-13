@@ -15,12 +15,12 @@
         html{scroll-behavior:smooth;}
         body{font-family:'Poppins',sans-serif;background:#fff;color:#333;overflow-x:hidden;}
         /* PRELOADER */
-        #preloader{position:fixed;inset:0;background:var(--dark);z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity .9s ease,visibility .9s ease;}
+        #preloader{position:fixed;inset:0;background:var(--dark);z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity .4s ease,visibility .4s ease;}
         #preloader.hide{opacity:0;visibility:hidden;pointer-events:none;}
-        .preloader-logo{width:90px;animation:preloaderPulse 1.6s ease-in-out infinite;}
+        .preloader-logo{width:90px;animation:preloaderPulse 1.2s ease-in-out infinite;}
         @keyframes preloaderPulse{0%,100%{filter:drop-shadow(0 0 20px rgba(244,167,90,.5));transform:scale(1);}50%{filter:drop-shadow(0 0 45px rgba(244,167,90,.9));transform:scale(1.07);}}
         .preloader-bar{width:180px;height:2px;background:rgba(255,255,255,.08);border-radius:2px;margin-top:28px;overflow:hidden;}
-        .preloader-fill{height:100%;background:linear-gradient(90deg,var(--gold),#ffd700);animation:fillBar 1.6s ease-out forwards;}
+        .preloader-fill{height:100%;background:linear-gradient(90deg,var(--gold),#ffd700);animation:fillBar .6s ease-out forwards;}
         @keyframes fillBar{from{width:0;}to{width:100%;}}
         .preloader-text{color:rgba(255,255,255,.25);font-size:.62rem;letter-spacing:4px;margin-top:18px;}
 
@@ -366,7 +366,17 @@
 <script>
 AOS.init({duration:850,once:true,offset:70,easing:'ease-out-cubic'});
 
-window.addEventListener('load',function(){setTimeout(function(){document.getElementById('preloader').classList.add('hide');},1700);});
+// Preloader: hide fast — use DOMContentLoaded (not window.load) so we don't
+// wait for every image. Show for a minimum of 600ms, then fade out quickly.
+// Absolute safety fallback: always hide within 3s no matter what.
+(function(){
+  var pl=document.getElementById('preloader');
+  var startTime=Date.now();
+  var MIN_MS=600;
+  function hidePl(){var elapsed=Date.now()-startTime;var wait=Math.max(0,MIN_MS-elapsed);setTimeout(function(){if(pl)pl.classList.add('hide');},wait);}
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',hidePl);}else{hidePl();}
+  setTimeout(function(){if(pl)pl.classList.add('hide');},3000);
+})();
 
 
 var navbar=document.querySelector('.navbar'),progress=document.getElementById('scroll-progress'),btt=document.getElementById('back-to-top'),sections=document.querySelectorAll('section[id]');
